@@ -141,9 +141,6 @@ class TextApp
 end
 
 class MySinatraApp < Sinatra::Base
-  set :bind, '0.0.0.0'
-  set :port, 80
-
   post '/incoming' do
     body = params['Body']
     from = params['From']
